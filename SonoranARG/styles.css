@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'ac437_ibm_biosregular';
+    src: url('ac437_ibm_bios.woff2') format('woff2'),
+        url('ac437_ibm_bios.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    background-color: black;
+    color: #66FF66;
+    font-family: ac437_ibm_biosregular;
+}
+
+h1 {
+    white-space: pre;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+}
+                
+.input-container {
+    display: flex;
+    align-items: center;
+}
+                
+.input-arrow {
+    margin-right: 10px;
+    font-size: 16px;
+}
+                
+.hidden-input {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    color: inherit;
+    width: 100%;
+    font-family: ac437_ibm_biosregular;
+    flex: 1;
+    /* Take remaining space */
+    width: calc(100% - 20px);
+    /* Adjust width to accommodate arrow */
+}
+
+button {
+    display: none;
+    /* Hide the submit button */
+}
+                
+.hidden-input::placeholder {
+    color: #999;
+    /* Light placeholder text */
+}
+
+.response {
+    margin-top: 20px;
+    font-size: 16px;
+}

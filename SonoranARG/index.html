@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSERT PASSKEY</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>
+  ____   ___  _   _  ___  ____      _    _   _ 
+ / ___| / _ \| \ | |/ _ \|  _ \    / \  | \ | |
+ \___ \| | | |  \| | | | | |_) |  / _ \ |  \| |
+  ___) | |_| | |\  | |_| |  _ <  / ___ \| |\  |
+ |____/ \___/|_| \_|\___/|_| \_\/_/   \_\_| \_|
+    </h1>
+    <hr style="border-color: #66FF66;">
+
+    <h1>Enter User Passkey</h1>
+    <div class="input-container">
+        <span class="input-arrow">&gt;</span>
+    <form onsubmit="checkPassword(event)">
+        <input type="password" id="password" class="hidden-input" placeholder="" required>
+        <button type="submit" class="hidden-input"></button>
+    </form>
+    </div>
+    <p id="error-message" style="color: red;"></p>
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
